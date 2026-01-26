@@ -31,6 +31,8 @@ Clone or copy this folder into your Arduino libraries directory:
 
 ## Basic usage
 
+### DEBUG flags
+
 Debug flags must be defined **before** including the header.
 
 ```cpp
