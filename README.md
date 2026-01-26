@@ -33,10 +33,14 @@ Clone or copy this folder into your Arduino libraries directory:
 
 ### DEBUG flags
 
-Debug flags must be defined **before** including the header.
+Debug flags must be defined **before** including the header. Enable the debug prints by defining at least one category above the include. 
+Categories are meant to be self explanatory, but you can assign them any way you like. 
+
+For a full list of available macros, see the source. 
+
+
 
 ```cpp
-#define DEBUG 1
 #define DEBUG_MOTOR 1
 
 #include <DefLab_Common.h>
