@@ -65,6 +65,7 @@ void loop() {
     });             // be sure to close parens and add ;
 }
 
+```cpp
 ---
 
 ### Shared enums
