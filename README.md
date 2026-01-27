@@ -64,8 +64,6 @@ void loop() {
       debugln(x);   // 'debugln' adds a carriage return
     });             // be sure to close parens and add ;
 }
-
-
 ```
 
 ---
@@ -88,3 +86,26 @@ They do not implement behavior on their own.
 DefLab::SensorInputMode
 DefLab::RelayOutputMode
 DefLab::ButtonInputMode
+```
+
+#### Available modes
+
+```cpp
+enum class SensorInputMode : uint8_t {
+  GPIO,
+  OPTA_CTL,
+  EXP_DIG,
+  EXP_ANA
+};
+
+enum class RelayOutputMode : uint8_t {
+  GPIO,
+  OPTA_CTL,
+  EXP_DIG
+};
+
+enum class ButtonInputMode : uint8_t {
+  GPIO,
+  OPTA_CTL,
+  EXP_DIG
+};
