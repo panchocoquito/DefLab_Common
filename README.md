@@ -65,7 +65,9 @@ void loop() {
     });             // be sure to close parens and add ;
 }
 
-```md
+
+(three backticks, nothing else)
+
 ---
 
 ### Shared enums
