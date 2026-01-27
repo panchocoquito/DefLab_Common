@@ -64,3 +64,24 @@ void loop() {
       debugln(x);   // 'debugln' adds a carriage return
     });             // be sure to close parens and add ;
 }
+
+---
+
+### Shared enums
+
+`DefLab_Common` defines a small set of strongly-typed enums that are shared across Def Lab libraries.  
+They exist here so multiple libraries can agree on **the same vocabulary** for inputs, outputs, and hardware routing.
+
+These enums are:
+- **Scoped** (`enum class`)
+- **Type-safe**
+- Intended for use in configuration structs, constructors, and mode selection logic
+
+They do not implement behavior on their own.
+
+#### Available enums
+
+```cpp
+DefLab::SensorInputMode
+DefLab::RelayOutputMode
+DefLab::ButtonInputMode
